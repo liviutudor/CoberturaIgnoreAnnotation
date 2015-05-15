@@ -17,6 +17,7 @@ cobertura {
     coverageIgnoreTrivial = true
     coverageIgnores = ['org.apache.commons.lang3.builder.ToStringBuilder.*']
     coverageExcludes = ['.*com.netflix.twitter.api.ta.beans.*', '.*Exception']
+    coverageIgnoreMethodAnnotations = ['AvoidCoverage']
     coverageReportDir = new File("$buildDir/reports/cobertura")
     coverageCheckHaltOnFailure=true
     coverageCheckTotalBranchRate=90

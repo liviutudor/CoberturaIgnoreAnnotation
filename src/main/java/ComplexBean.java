@@ -36,7 +36,7 @@ public class ComplexBean {
         return true;
     }
 
-    @Override
+    @Override @AvoidCoverage
     public String toString() {
         return "ComplexBean: [int=" + propertyInt + ", has data=" + (propertyMap != null && !propertyMap.isEmpty()) + "]";
     }
