@@ -1,3 +1,4 @@
+import javax.annotation.Generated;
 import java.util.Map;
 
 /**
@@ -36,7 +37,7 @@ public class ComplexBean {
         return true;
     }
 
-    @Override
+    @Override @Generated("LiviuTudor")
     public String toString() {
         return "ComplexBean: [int=" + propertyInt + ", has data=" + (propertyMap != null && !propertyMap.isEmpty()) + "]";
     }
