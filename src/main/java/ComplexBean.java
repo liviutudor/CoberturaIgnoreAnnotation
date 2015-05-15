@@ -1,3 +1,5 @@
+import org.apache.commons.digester3.annotations.rules.SetRoot;
+
 import java.util.Map;
 
 /**
@@ -37,6 +39,7 @@ public class ComplexBean {
     }
 
     @Override
+    @SetRoot
     public String toString() {
         return "ComplexBean: [int=" + propertyInt + ", has data=" + (propertyMap != null && !propertyMap.isEmpty()) + "]";
     }

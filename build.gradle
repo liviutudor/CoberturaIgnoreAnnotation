@@ -8,6 +8,7 @@ repositories {
 dependencies {
     compile 'org.slf4j:slf4j-api:1.7.7'
     compile 'org.apache.commons:commons-lang3:3.0'
+    compile 'org.apache.commons:commons-digester3:3.2'
 
     testCompile 'junit:junit:4.12'
 }
@@ -17,6 +18,7 @@ cobertura {
     coverageIgnoreTrivial = true
     coverageIgnores = ['org.apache.commons.lang3.builder.ToStringBuilder.*']
     coverageExcludes = ['.*com.netflix.twitter.api.ta.beans.*', '.*Exception']
+    coverageIgnoreMethodAnnotations = ['org.apache.commons.digester3.annotations.rules.SetRoot']
     coverageReportDir = new File("$buildDir/reports/cobertura")
     coverageCheckHaltOnFailure=true
     coverageCheckTotalBranchRate=90
